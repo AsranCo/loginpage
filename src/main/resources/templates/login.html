@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title> ورود </title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/custom/custom.css}"/>
+    <link rel="shortcut icon" th:href="@{/media/logos/logo-light.svg}"/>
+    <link th:href="@{/css/plugins.bundle.rtl.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/style.bundle.rtl.css}" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body id="kt_body" class="app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
+
+<div class="d-flex flex-column flex-root">
+    <!--begin::احراز هویت - ورود -->
+    <div class="d-flex flex-column flex-column-fluid flex-lg-row">
+        <!--begin::کناری-->
+        <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">
+            <!--begin::کناری-->
+            <div class="d-flex flex-center flex-lg-start flex-column">
+                <!--begin::Logo-->
+                <a class="mb-7">
+                    <img alt="Logo" src="/media/logos/logo-light.svg"/>
+                </a>
+                <!--end::Logo-->
+                <!--begin::Title-->
+                <h2 class="text-white fw-normal m-0">ابزارهایی را که برای کسب و کار شما طراحی شده اند به ارمغان
+                    بیاورید</h2>
+                <!--end::Title-->
+            </div>
+            <!--begin::کناری-->
+        </div>
+        <!--begin::کناری-->
+        <!--begin::Body-->
+        <div class="d-flex flex-center w-lg-50 p-10">
+            <!--begin::کارت-->
+            <div class="card rounded-3 w-md-500px">
+                <!--begin::کارت body-->
+                <div class="card-body p-10 p-lg-20" >
+                    <!--begin::Form-->
+                    <div th:if="${param.error}">
+                        <div class="alert alert-danger">Invalid Email and Password.</div>
+                    </div>
+                    <div th:if="${param.logout}">
+                        <div class="alert alert-success">You have been logged out.</div>
+                    </div>
+
+                    <form th:action="@{/login}" class="form w-100" novalidate="novalidate"
+                          method="POST" >
+                        <!--begin::Heading-->
+                        <div class="text-center mb-11">
+                            <h1 class="text-light-dark fw-bolder mb-3 ">ورود به سامانه</h1>
+                        </div>
+                        <div class="row g-3 mb-9" id="kt_sign_in_form">
+                            <div class="fv-row mb-8">
+                                <input  type="text" placeholder="نام کاربری" name="username" autocomplete="off"
+                                        class="form-control bg-transparent" style="text-align: right"/>
+                            </div>
+                            <div class="fv-row mb-3">
+                                <!--begin::password-->
+                                <input type="password" placeholder="کلمه عبور" name="password" autocomplete="off"
+                                       class="form-control bg-transparent" style="text-align: right"/>
+                                <!--end::password-->
+                            </div>
+                        </div>
+                        <!--end::Wrapper-->
+                        <!--begin::ثبت button-->
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <span> Not registered?
+                            <a th:href="@{/register}"> Register/SignUp Here</a>
+                        </span>
+                        </div>
+<!--                        <div class="d-grid mb-10">-->
+<!--                            <button type="submit" id="kt_sign_in_submit" class="btn btn-primary">-->
+<!--                                &lt;!&ndash;begin::Indicator label&ndash;&gt;-->
+<!--                                <span class="indicator-label">ورود</span>-->
+<!--                                &lt;!&ndash;end::Indicator label&ndash;&gt;-->
+<!--                                &lt;!&ndash;begin::Indicator progress&ndash;&gt;-->
+<!--                                <span class="indicator-progress">لطفا صبر کنید...-->
+<!--										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>-->
+<!--                                &lt;!&ndash;end::Indicator progress&ndash;&gt;-->
+<!--                            </button>-->
+<!--                            <a th:href="@{/register}"> Register/SignUp Here</a>-->
+
+<!--                        </div>-->
+
+                    </form>
+                    <!--end::Form-->
+                </div>
+                <!--end::کارت body-->
+            </div>
+            <!--end::کارت-->
+        </div>
+        <!--end::Body-->
+    </div>
+    <!--end::احراز هویت - ورود-->
+</div>
+<script th:src="@{/js/plugins.bundle.js}"></script>
+<script th:src="@{/js/scripts.bundle.js}"></script>
+<script th:src="@{/js/custom/authentication/sign-in/general.js}"></script>
+</body>
+</html>
