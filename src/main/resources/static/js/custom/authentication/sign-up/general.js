@@ -15,10 +15,10 @@ var KTSignupGeneral = function() {
 			form,
 			{
 				fields: {
-					'first-name': {
+					'name': {
 						validators: {
 							notEmpty: {
-								message: 'First Name is required'
+								message: 'ورود نام الزامی است'
 							}
 						}
                     },

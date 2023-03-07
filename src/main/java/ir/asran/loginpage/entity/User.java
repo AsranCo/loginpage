@@ -1,6 +1,7 @@
 package ir.asran.loginpage.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,15 +27,17 @@ public class User
     @Column(nullable=false)
     private String name;
 
+    @NotEmpty(message = "نام کاربری معتبر نمی باشد")
     @Column(nullable=false, unique=true)
     private String username;
 
+    @NotEmpty(message = "کلمه عبور معتبر نمی باشد")
     @Column(nullable=false)
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(
-            name="users_roles",
+            name="user_role",
             joinColumns={@JoinColumn(name="USER_ID", referencedColumnName="ID")},
             inverseJoinColumns={@JoinColumn(name="ROLE_ID", referencedColumnName="ID")})
     private List<Role> roles = new ArrayList<>();

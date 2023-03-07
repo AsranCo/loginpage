@@ -9,6 +9,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -22,7 +23,7 @@ public class AuthController {
     }
 
     @GetMapping("/")
-    public String home(){
+    public String home() {
         return "redirect:/dashboard";
     }
 
@@ -32,32 +33,40 @@ public class AuthController {
     }
 
     // handler method to handle user registration request
-    @GetMapping("register")
-    public String showRegistrationForm(Model model){
+    @GetMapping(value = "/register")
+    public ModelAndView registration() {
+        ModelAndView modelAndView = new ModelAndView();
         User user = new User();
-        model.addAttribute("user", user);
-        return "register";
+        modelAndView.addObject("user", user);
+        modelAndView.setViewName("register");
+        return modelAndView;
     }
 
-    // handler method to handle register user form submit request
-    @PostMapping("/register/save")
-    public String registration(@Valid @ModelAttribute("user") User user,
-                               BindingResult result,
-                               Model model){
-        User existing = userService.findByUsername(user.getUsername());
-        if (existing != null) {
-            result.rejectValue("username", null, "نام کاربری استفاده شده است!");
+    @PostMapping(value = "/register")
+    public ModelAndView createNewUser(@Valid User user, BindingResult bindingResult) {
+
+        ModelAndView modelAndView = new ModelAndView("redirect:/register?success");
+        User userExists = userService.findByUsername(user.getUsername());
+        if (userExists != null) {
+            bindingResult
+                    .rejectValue("username", "error.user",
+                            "نام کاربری پیشتر گرفته شده");
         }
-        if (result.hasErrors()) {
-            model.addAttribute("user", user);
-            return "register";
+        if (bindingResult.hasErrors()) {
+
+//            modelAndView.setViewName("redirect:/register?error");
+            modelAndView.setViewName("register");
+        } else {
+            userService.saveUser(user);
+            modelAndView.addObject("user", new User());
+            modelAndView.setViewName("redirect:/register?success");
+
         }
-        userService.saveUser(user);
-        return "redirect:/register?success";
+        return modelAndView;
     }
 
     @GetMapping("/dashboard")
-    public String listRegisteredUsers(Model model){
+    public String listRegisteredUsers(Model model) {
         List<User> users = userService.findAllUsers();
         model.addAttribute("users", users);
         return "dashboard";

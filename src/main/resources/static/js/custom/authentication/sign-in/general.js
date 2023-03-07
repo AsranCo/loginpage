@@ -26,6 +26,12 @@ var KTSigninGeneral = function () {
                                 message: 'ورود کلمه عبور الزامی است'
                             }
                         }
+                    },'name': {
+                        validators: {
+                            notEmpty: {
+                                message: 'ورود نام الزامی است'
+                            }
+                        }
                     }
                 },
                 plugins: {

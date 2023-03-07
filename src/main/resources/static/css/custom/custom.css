@@ -3,5 +3,8 @@ body{
     background-repeat: repeat !important;
 }
 .form-control {
-    border: 2px solid #04C8C8 !important;
+    border: 2px solid #11B3B3 !important;
+}
+.text-color-danger{
+    color:   #f46d90;;
 }
