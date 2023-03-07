@@ -1,6 +1,5 @@
 package ir.asran.loginpage.service.impl;
 
-import ir.asran.loginpage.dto.UserDto;
 import ir.asran.loginpage.entity.Role;
 import ir.asran.loginpage.entity.User;
 import ir.asran.loginpage.repository.RoleRepository;
@@ -9,16 +8,15 @@ import ir.asran.loginpage.service.UserService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
 
-    private UserRepository userRepository;
-    private RoleRepository roleRepository;
-    private PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
+    private final PasswordEncoder passwordEncoder;
 
     public UserServiceImpl(UserRepository userRepository,
                            RoleRepository roleRepository,
@@ -29,10 +27,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void saveUser(UserDto userDto) {
+    public void saveUser(User userDto) {
         User user = new User();
-        user.setName(userDto.getFirstName() + " " + userDto.getLastName());
-        user.setEmail(userDto.getEmail());
+        user.setName(userDto.getName());
+        user.setUsername(userDto.getUsername());
 
         //encrypt the password once we integrate spring security
         //user.setPassword(userDto.getPassword());
@@ -41,28 +39,27 @@ public class UserServiceImpl implements UserService {
         if(role == null){
             role = checkRoleExist();
         }
-        user.setRoles(Arrays.asList(role));
+        user.setRoles(List.of(role));
         userRepository.save(user);
     }
 
     @Override
-    public User findByEmail(String email) {
-        return userRepository.findByEmail(email);
+    public User findByUsername(String username) {
+        return userRepository.findByUsername(username);
     }
 
     @Override
-    public List<UserDto> findAllUsers() {
+    public List<User> findAllUsers() {
         List<User> users = userRepository.findAll();
-        return users.stream().map((user) -> convertEntityToDto(user))
+        return users.stream().map(this::convertEntityToDto)
                 .collect(Collectors.toList());
     }
 
-    private UserDto convertEntityToDto(User user){
-        UserDto userDto = new UserDto();
-        String[] name = user.getName().split(" ");
-        userDto.setFirstName(name[0]);
-        userDto.setLastName(name[1]);
-        userDto.setEmail(user.getEmail());
+    private User convertEntityToDto(User user){
+        User userDto = new User();
+        String name = user.getName();
+        userDto.setName(name);
+        userDto.setUsername(user.getUsername());
         return userDto;
     }
 

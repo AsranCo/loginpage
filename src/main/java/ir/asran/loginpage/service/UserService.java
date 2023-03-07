@@ -1,14 +1,13 @@
 package ir.asran.loginpage.service;
 
-import ir.asran.loginpage.dto.UserDto;
 import ir.asran.loginpage.entity.User;
 
 import java.util.List;
 
 public interface UserService {
-    void saveUser(UserDto userDto);
+    void saveUser(User user);
 
-    User findByEmail(String email);
+    User findByUsername(String username);
 
-    List<UserDto> findAllUsers();
+    List<User> findAllUsers();
 }

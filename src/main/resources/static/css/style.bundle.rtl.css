@@ -3116,8 +3116,8 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.5rem;
-  font-size: 1.25rem;
-  color: #F1416C;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 .invalid-tooltip {

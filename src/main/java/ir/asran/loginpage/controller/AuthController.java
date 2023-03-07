@@ -1,6 +1,5 @@
 package ir.asran.loginpage.controller;
 
-import ir.asran.loginpage.dto.UserDto;
 import ir.asran.loginpage.entity.User;
 import ir.asran.loginpage.service.UserService;
 import jakarta.validation.Valid;
@@ -16,7 +15,7 @@ import java.util.List;
 @Controller
 public class AuthController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public AuthController(UserService userService) {
         this.userService = userService;
@@ -24,7 +23,7 @@ public class AuthController {
 
     @GetMapping("/")
     public String home(){
-        return "index";
+        return "redirect:/dashboard";
     }
 
     @GetMapping("/login")
@@ -35,19 +34,19 @@ public class AuthController {
     // handler method to handle user registration request
     @GetMapping("register")
     public String showRegistrationForm(Model model){
-        UserDto user = new UserDto();
+        User user = new User();
         model.addAttribute("user", user);
         return "register";
     }
 
     // handler method to handle register user form submit request
     @PostMapping("/register/save")
-    public String registration(@Valid @ModelAttribute("user") UserDto user,
+    public String registration(@Valid @ModelAttribute("user") User user,
                                BindingResult result,
                                Model model){
-        User existing = userService.findByEmail(user.getEmail());
+        User existing = userService.findByUsername(user.getUsername());
         if (existing != null) {
-            result.rejectValue("email", null, "There is already an account registered with that email");
+            result.rejectValue("username", null, "نام کاربری استفاده شده است!");
         }
         if (result.hasErrors()) {
             model.addAttribute("user", user);
@@ -57,10 +56,10 @@ public class AuthController {
         return "redirect:/register?success";
     }
 
-    @GetMapping("/users")
+    @GetMapping("/dashboard")
     public String listRegisteredUsers(Model model){
-        List<UserDto> users = userService.findAllUsers();
+        List<User> users = userService.findAllUsers();
         model.addAttribute("users", users);
-        return "users";
+        return "dashboard";
     }
 }

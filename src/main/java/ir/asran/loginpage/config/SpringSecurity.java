@@ -29,22 +29,23 @@ public class SpringSecurity {
         http.csrf().disable()
                 .authorizeHttpRequests((authorize) ->
                         authorize.requestMatchers("/register/**","/css/**","/js/**","/fonts/**","/media/**","/plugins/**").permitAll()
-                                .requestMatchers("/index").permitAll()
-                                .requestMatchers("/users").hasRole("ADMIN")
+                                .requestMatchers("/login").permitAll()
+                                .requestMatchers("/dashboard").hasRole("ADMIN")
                                 .anyRequest().permitAll()
                 ).formLogin(
                         form -> form
                                 .loginPage("/login")
                                 .loginProcessingUrl("/login")
-                                .defaultSuccessUrl("/users")
+                                .defaultSuccessUrl("/dashboard")
+
                                 .permitAll()
-                ).logout(
+                    ).logout(
                         logout -> logout
                                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                                 .logoutSuccessUrl("/")
                                 .permitAll()
                 );
-        return http.build();
+            return http.build();
     }
 
     @Autowired
