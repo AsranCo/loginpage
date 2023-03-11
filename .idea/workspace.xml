@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb181c38-e3c5-46fe-80a3-b5fd38c01c96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/05fada5f-bcee-45a7-a29d-58d1e9feb6b5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/05fada5f-bcee-45a7-a29d-58d1e9feb6b5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/custom/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/custom/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/authentication/sign-in/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom/authentication/sign-in/general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/authentication/sign-up/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom/authentication/sign-up/general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/custom/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/custom/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/custom/authentication/sign-in/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/custom/authentication/sign-in/general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/custom/authentication/sign-up/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/custom/authentication/sign-up/general.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +102,8 @@
       <workItem from="1678006761389" duration="7800000" />
       <workItem from="1678080050965" duration="5266000" />
       <workItem from="1678161307767" duration="12914000" />
-      <workItem from="1678190651671" duration="374000" />
+      <workItem from="1678190651671" duration="2131000" />
+      <workItem from="1678524825341" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <created>1678161458983</created>
@@ -122,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678161458983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix bug register page">
+      <created>1678191241393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678191241393</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean" />
+    <MESSAGE value="fix bug register page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug register page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
