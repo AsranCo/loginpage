@@ -93,9 +93,13 @@ i[class*=" fonticon-"]:before {
     margin-top: 0.1em;
 }
 .fonticon-sun:before {
-    content: "\f118";
     margin-top: 0.1em;
 }
+
+.fonticon-sun:before {
+    content: "\f118";
+}
+
 .fonticon-train:before {
     content: "\f119";
 }

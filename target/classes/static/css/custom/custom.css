@@ -18,13 +18,6 @@ body,html  {
     background-position: center center;
     background-attachment: fixed
 }
-
-/*.bg-body-login {*/
-/*    background-image: url("/media/auth/lb.jpg") !important;*/
-/*    background-repeat: repeat !important;*/
-/*    background-size: cover;*/
-
-/*}*/
 .invalid-feedback {
     font-size: 0.925rem;
     color: #FFF !important;
