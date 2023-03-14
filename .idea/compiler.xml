@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="loginpage" />
         <module name="registration-login-demo" />
         <module name="loginPage" />
       </profile>
@@ -14,6 +15,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="loginPage" options="-parameters" />
+      <module name="loginpage" options="-parameters" />
       <module name="registration-login-demo" options="-parameters" />
     </option>
   </component>
