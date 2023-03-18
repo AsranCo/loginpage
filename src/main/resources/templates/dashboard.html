@@ -21,7 +21,7 @@
 <!--end::Head-->
 
 <!--begin::Body-->
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-enabled"
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-enabled "
       data-kt-aside-minimize="on">
 <!--begin::Main-->
 
@@ -29,7 +29,7 @@
 <div class="d-flex flex-column flex-root">
 	<!--begin::Page-->
 	<div class="page d-flex flex-row flex-column-fluid">
-		<!--begin::کناری-->
+		<!--begin:: منو اصلی-->
 		<div id="kt_aside" class="aside aside-extended" data-kt-drawer="true" data-kt-drawer-name="aside"
 		     data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
 		     data-kt-drawer-width="auto" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
@@ -45,6 +45,7 @@
 					<div class="border-bottom border-gray-300 mw-50 w-100"
 					     style="margin-top: 18px;margin-right: 4px;"></div>
 				</div>
+				<!--end::Logo-->
 				<!--begin::Nav-->
 				<div class="aside-nav d-flex flex-column align-items-center flex-column-fluid w-100 pt-5 pt-lg-0"
 				     id="kt_aside_nav">
@@ -55,7 +56,8 @@
 					     data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer" data-kt-scroll-offset="0px">
 						<!--begin::Nav-->
 						<ul class="nav flex-column">
-							<!--begin::SEND PANEL-->
+
+							<!--begin::Send panel-->
 							<li class="nav-item mb-2" data-bs-toggle="tooltip" data-bs-trigger="hover"
 							    data-bs-placement="right" data-bs-dismiss="click" title="پنل ارسال">
 								<!--begin::Nav link-->
@@ -109,8 +111,9 @@
 								</a>
 								<!--end::Nav link-->
 							</li>
-							<!--end::SEND PANEL-->
-							<!--begin::RECIEVE PANEL-->
+							<!--end::Send panel-->
+
+							<!--begin::Receive panel-->
 							<li class="nav-item mb-2" data-bs-toggle="tooltip" data-bs-trigger="hover"
 							    data-bs-placement="right" data-bs-dismiss="click" title="پنل دریافت">
 								<!--begin::Nav link-->
@@ -157,7 +160,7 @@
 								</a>
 								<!--end::Nav link-->
 							</li>
-							<!--end::RECIEVE PANEL-->
+							<!--end::Receive panel-->
 
 						</ul>
 						<!--end::Tabs-->
@@ -169,7 +172,7 @@
 			</div>
 			<!--end::اصلی-->
 
-			<!--begin::کناری Toggle-->
+			<!--begin:: Toggle-->
 			<button class="btn btn-sm btn-icon mb-10 bg-body btn-color-gray-700 btn-active-primary position-absolute
 			 translate-middle start-100 end-0 bottom-0 shadow-sm d-none d-lg-flex"
 			        data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body">
@@ -185,10 +188,11 @@
 				</span>
 				<!--end::Svg Icon-->
 			</button>
-			<!--end::کناری Toggle-->
+			<!--end:: Toggle-->
 		</div>
-		<!--end::کناری-->
-		<!--begin::Wrapper-->
+		<!--end::منو اصلی -->
+
+		<!--begin::محتوا صفحه-->
 		<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
 			<!--begin::Header-->
 			<div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header"
@@ -977,38 +981,54 @@
 				<!--end::Container-->
 			</div>
 			<!--end::Content-->
-			<!--begin::Footer-->
-			<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
-				<!--begin::Container-->
-				<div class="container-xxl d-flex flex-column flex-md-row flex-stack">
-					<!--begin::Copyright-->
-					<div class="text-dark order-2 order-md-1">
-						<span class="text-gray-400 fw-bold me-1">سامانه اطلاع رسانی ©</span>
-						<a href="" target="_blank"
-						   class="text-muted text-hover-primary fw-bold me-2 fs-6">1401</a>
-					</div>
-					<!--end::Copyright-->
-					<!--begin::Menu-->
-					<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
-						<li class="menu-item">
-							<a target="_blank" class="menu-link px-2">نسخه : 1.0.0</a>
-						</li>
 
-					</ul>
-					<!--end::Menu-->
-				</div>
-				<!--end::Container-->
-			</div>
-			<!--end::Footer-->
+
+
+
+
 		</div>
-		<!--end::Wrapper-->
+		<!--end::محتوا صفحه -->
+
 	</div>
 	<!--end::Page-->
 </div>
 <!--end::Root-->
 
 
+<!--begin::Footer-->
+<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+	<!--begin::Container-->
+	<div class="container-xxl d-flex flex-column flex-md-row flex-stack">
+		<!--begin::Copyright-->
+		<div class="text-dark order-2 order-md-1">
+			<span class="text-gray-400 fw-bold me-1">سامانه اطلاع رسانی ©</span>
+			<a href="" target="_blank"
+			   class="text-muted text-hover-primary fw-bold me-2 fs-6">1401</a>
+		</div>
+		<!--end::Copyright-->
+		<!--begin::Menu-->
+		<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
+			<li class="menu-item">
+				<a target="_blank" class="menu-link px-2">نسخه : 1.0.0</a>
+			</li>
+
+		</ul>
+		<!--end::Menu-->
+	</div>
+	<!--end::Container-->
+</div>
+<!--end::Footer-->
+
 <!--begin::کمک drawer-->
+<div class="engage-toolbar d-flex position-fixed px-5 fw-bolder zindex-2 top-50 end-0 transform-90 gap-2">
+	<!--begin::کمک drawer toggle-->
+	<button id="kt_help_toggle"
+	        class="engage-help-toggle btn btn-flex h-35px bg-body btn-color-gray-700 btn-active-color-gray-900 shadow-sm px-5 rounded-top-0"
+	        title="یادگیری و الهام گرفتن" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-dismiss="click"
+	        data-bs-trigger="hover">کمک
+	</button>
+	<!--end::کمک drawer toggle-->
+</div>
 <div id="kt_help" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="help" data-kt-drawer-activate="true"
      data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'md': '525px'}"
      data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_help_toggle" data-kt-drawer-close="#kt_help_close">
@@ -1945,13 +1965,9 @@
 					<div class="btn btn-icon btn-sm btn-active-icon-primary" data-bs-dismiss="modal">
 						<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
 						<span class="svg-icon svg-icon-1">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-														     viewBox="0 0 24 24" fill="none">
-															<rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
-															      rx="1" transform="rotate(-45 6 17.3137)"
-															      fill="currentColor"/>
-															<rect x="7.41422" y="6" width="16" height="2" rx="1"
-															      transform="rotate(45 7.41422 6)" fill="currentColor"/>
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+															<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
 														</svg>
 													</span>
 						<!--end::Svg Icon-->
@@ -1988,8 +2004,7 @@
 									<!--begin::پردازش-->
 									<div class="dropzone-progress">
 										<div class="progress bg-light-primary">
-											<div class="progress-bar bg-primary" role="progressbar" aria-valuemin="0"
-											     aria-valuemax="100" aria-valuenow="0" data-dz-uploadprogress=""></div>
+											<div class="progress-bar bg-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-dz-uploadprogress=""></div>
 										</div>
 									</div>
 									<!--end::پردازش-->
@@ -2025,7 +2040,7 @@
 </div>
 <!--end::Modal - بارگزاری فایل-->
 
-<!--begin::Global Javascript Bundle(used by all pages)-->
+<!--end::Global Javascript Bundle-->
 <script src="/plugins/global/plugins.bundle.js"></script>
 <script src="/js/scripts.bundle.js"></script>
 <script src="/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
@@ -2037,6 +2052,7 @@
 <script src="/js/custom/utilities/modals/create-app.js"></script>
 <script src="/js/custom/utilities/modals/users-search.js"></script>
 <!--end::Javascript-->
+
 </body>
 <!--end::Body-->
 

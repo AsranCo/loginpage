@@ -47222,7 +47222,7 @@ body {
     flex-shrink: 0;
   }
   .aside-secondary-enabled .aside {
-    width: 300px;
+    width: 150px;
   }
   .aside-secondary-disabled .aside {
     width: 70px;
