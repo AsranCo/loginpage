@@ -47,3 +47,8 @@ body,html  {
     font-size: 1rem;
     color: #f8f0f3;
 }
+
+.btn.btn-new {
+    color: rgba(60, 62, 72, 0.9);
+    border-color: #F5F8FA;
+    background-color: #C5C6CB80;}
