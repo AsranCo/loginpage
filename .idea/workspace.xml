@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb181c38-e3c5-46fe-80a3-b5fd38c01c96" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
-    </list>
+    <list default="true" id="bb181c38-e3c5-46fe-80a3-b5fd38c01c96" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +130,7 @@
       <workItem from="1678599510639" duration="14543000" />
       <workItem from="1678688285653" duration="90743000" />
       <workItem from="1678855828168" duration="16848000" />
-      <workItem from="1679117294295" duration="17241000" />
+      <workItem from="1679117294295" duration="17966000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <created>1678161458983</created>
@@ -206,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679220287763</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="set breadcrumb">
+      <created>1679220708399</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679220708399</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +235,8 @@
     <MESSAGE value="delete chat and fix main menu" />
     <MESSAGE value="clean code and delete more!" />
     <MESSAGE value="set loadChapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="set loadChapter" />
+    <MESSAGE value="set breadcrumb" />
+    <option name="LAST_COMMIT_MESSAGE" value="set breadcrumb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
