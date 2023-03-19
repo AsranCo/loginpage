@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb181c38-e3c5-46fe-80a3-b5fd38c01c96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
     </list>
@@ -135,7 +134,7 @@
       <workItem from="1678599510639" duration="14543000" />
       <workItem from="1678688285653" duration="90743000" />
       <workItem from="1678855828168" duration="16848000" />
-      <workItem from="1679117294295" duration="16932000" />
+      <workItem from="1679117294295" duration="17241000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <created>1678161458983</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679124313356</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="set loadChapter">
+      <created>1679220287763</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679220287763</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +231,8 @@
     <MESSAGE value="set menu icon" />
     <MESSAGE value="delete chat and fix main menu" />
     <MESSAGE value="clean code and delete more!" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean code and delete more!" />
+    <MESSAGE value="set loadChapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="set loadChapter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
