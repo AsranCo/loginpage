@@ -12,8 +12,6 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name="users")
 public class User
@@ -23,9 +21,6 @@ public class User
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(nullable=false)
-    private String name;
 
     @NotEmpty(message = "نام کاربری معتبر نمی باشد")
     @Column(nullable=false, unique=true)

@@ -23,8 +23,10 @@ body,html  {
     color: #FFF !important;
 }
 
-.form-control {
-    border: 2px solid #11B3B3 !important;
+.form-control-login {
+    border: 2px solid rgba(255, 255, 255, 0.68) !important;
+    color: #FFF !important;
+
 }
 .text-color-danger{
     color:   #f46d90;;
@@ -38,9 +40,6 @@ body,html  {
     background-color: rgba(24, 28, 50, 0.74);
     background-clip: border-box;
     border-radius: 0.85rem;
-}
-.form-control{
-    color: #FFF !important;
 }
 
 .invalid-feedback-new{

@@ -5,8 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb181c38-e3c5-46fe-80a3-b5fd38c01c96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/Employe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/media/auth/back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/05fada5f-bcee-45a7-a29d-58d1e9feb6b5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/05fada5f-bcee-45a7-a29d-58d1e9feb6b5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/config/SpringSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/config/SpringSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/asran/loginpage/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/custom/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/custom/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.bundle.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.bundle.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom/intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/landing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/custom/landing.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/global/plugins.dark.bundle.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add-contact.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/config/SpringSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/config/SpringSecurity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/asran/loginpage/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/custom/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/custom/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/custom/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/custom/intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/custom/landing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/custom/landing.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/global/plugins.dark.bundle.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/add-contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +90,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ali/IdeaProjects/FrontEnd/Theme/export-v3-withRls/export&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ali/IdeaProjects/smsApp&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -66,10 +101,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/media/auth" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/media/icons/duotune/arrows" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/media/logos" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/css/" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/css/custom/js/custom/authentication/sign-in" />
@@ -134,7 +169,17 @@
       <workItem from="1678688285653" duration="90743000" />
       <workItem from="1678855828168" duration="16848000" />
       <workItem from="1679117294295" duration="17966000" />
-      <workItem from="1680497270375" duration="3337000" />
+      <workItem from="1680497270375" duration="6761000" />
+      <workItem from="1680693942003" duration="1086000" />
+      <workItem from="1681107155830" duration="1632000" />
+      <workItem from="1681187913486" duration="4275000" />
+      <workItem from="1681622502568" duration="2034000" />
+      <workItem from="1682338028183" duration="438000" />
+      <workItem from="1682486238145" duration="675000" />
+      <workItem from="1682761348094" duration="5129000" />
+      <workItem from="1682850138375" duration="2394000" />
+      <workItem from="1683005163029" duration="1765000" />
+      <workItem from="1683011268677" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <created>1678161458983</created>
@@ -213,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679220708399</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="set breadcrumb">
+      <created>1680608954485</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680608954486</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,12 +299,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ir/asran/loginpage/controller/AuthController.java</url>
-          <line>16</line>
+          <line>15</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/ir/asran/loginpage/controller/AuthController.java</url>
-          <line>30</line>
+          <line>29</line>
           <properties class="ir.asran.loginpage.controller.AuthController" method="loginForm">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

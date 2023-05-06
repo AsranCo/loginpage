@@ -37,7 +37,7 @@
 				<!--begin::Logo-->
 				<div class="aside-logo d-none d-lg-flex flex-column align-items-center flex-column-auto py-10"
 				     id="kt_aside_logo">
-					<a href="dashboard">
+					<a href="">
 						<img alt="Logo" src="/media/logos/sms.svg" class="h-60px" style="margin-right: 4px;"/>
 					</a>
 
@@ -211,7 +211,7 @@
 								<a href="dashboard" class="text-muted">خانه</a>
 							</li>
 							<li class="breadcrumb-item text-dark" id="breadcrumb">پنل ارسال</li>
-<!--							<li class="breadcrumb-item text-dark">چند منظوره</li>-->
+							<!--							<li class="breadcrumb-item text-dark">چند منظوره</li>-->
 						</ul>
 						<!--end::Breadcrumb-->
 					</div>
@@ -285,7 +285,7 @@
 							<!--begin::لیست Widget 3-->
 							<div class="card card-xxl-stretch mb-xl-3">
 								<!--begin::Header-->
-								<div class="card-header border-0">
+								<div class="card-header border-0 mt-5">
 									<h3 class="card-title fw-bolder text-dark">فرم ارسال پیام</h3>
 									<div class="card-toolbar" data-bs-toggle="tooltip" data-bs-placement="top"
 									     data-bs-trigger="hover" title="برای ارسال فایل کلیک کنید">
@@ -293,145 +293,351 @@
 										   data-bs-toggle="modal" data-bs-target="#kt_modal_upload">ارسال فایل</a>
 									</div>
 
+									<!--begin::Stepper-->
+									<div class="stepper stepper-links d-flex flex-column pt-15"
+									     id="kt_create_account_stepper">
+										<!--begin::Nav-->
+										<div class="stepper-nav mb-5">
+											<!--begin::Step 1-->
+											<div class="stepper-item current" data-kt-stepper-element="nav">
+												<h3 class="stepper-title">متن پیام</h3>
+											</div>
+											<!--end::Step 1-->
+											<!--begin::Step 2-->
+											<div class="stepper-item" data-kt-stepper-element="nav">
+												<h3 class="stepper-title">انتخاب گیرنده</h3>
+											</div>
+											<!--end::Step 2-->
+
+										</div>
+										<!--end::Nav-->
+										<!--begin::Form-->
+										<form class="mx-auto mw-600px w-100 pt-15 pb-10" novalidate="novalidate"
+										      id="kt_create_account_form">
+											<!--begin::Step 1-->
+											<div class="current" data-kt-stepper-element="content">
+												<div class="w-100">
+													<!--begin::Input group-->
+													<div class="fv-row mb-10">
+														<!--begin::Tags-->
+														<label class="d-flex align-items-center fs-5 fw-bold mb-2">
+															<span class="required">متن پیام </span>
+															<i class="fas fa-exclamation-circle ms-2 fs-7"
+															   data-bs-toggle="tooltip"
+															   title="متن پیامک را وارد نمایید"></i>
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<input type="text"
+														       class="form-control form-control-lg form-control-solid"
+														       name="name" placeholder="" value=""/>
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+
+												</div>
+											</div>
+											<!--end::Step 1-->
+											<!--begin::Step 2-->
+											<div data-kt-stepper-element="content">
+												<!--begin::Wrapper-->
+												<div class="w-100">
+													<!--begin::Heading-->
+													<div class="pb-10 pb-lg-15">
+														<!--begin::Title-->
+														<h2 class="fw-bolder text-dark">اطلاعات اکانت</h2>
+														<!--end::Title-->
+														<!--begin::Notice-->
+														<div class="text-muted fw-bold fs-6">اگر به اطلاعات بیشتری نیاز
+															دارید ، لطفاً این مورد را بررسی کنید
+															<a href="#" class="link-primary fw-bolder">صفحه راهنما</a>.
+														</div>
+														<!--end::Notice-->
+													</div>
+													<!--end::Heading-->
+													<!--begin::Input group-->
+													<div class="mb-10 fv-row">
+														<!--begin::Tags-->
+														<label class="d-flex align-items-center form-label mb-3">اندازه
+															تیم را مشخص کنید
+															<i class="fas fa-exclamation-circle ms-2 fs-7"
+															   data-bs-toggle="tooltip"
+															   title="حرفه ایvide your تیم size to help us setup your billing"></i></label>
+														<!--end::Tags-->
+														<!--begin::Row-->
+														<div class="row mb-2" data-kt-buttons="true">
+															<!--begin::Col-->
+															<div class="col">
+																<!--begin::Option-->
+																<label class="btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4">
+																	<input type="radio" class="btn-check"
+																	       name="account_team_size" value="1-1"/>
+																	<span class="fw-bolder fs-3">1-1</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col">
+																<!--begin::Option-->
+																<label class="btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4 active">
+																	<input type="radio" class="btn-check"
+																	       name="account_team_size" checked="checked"
+																	       value="2-10"/>
+																	<span class="fw-bolder fs-3">2-10</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col">
+																<!--begin::Option-->
+																<label class="btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4">
+																	<input type="radio" class="btn-check"
+																	       name="account_team_size" value="10-50"/>
+																	<span class="fw-bolder fs-3">10-50</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col">
+																<!--begin::Option-->
+																<label class="btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4">
+																	<input type="radio" class="btn-check"
+																	       name="account_team_size" value="50+"/>
+																	<span class="fw-bolder fs-3">50+</span>
+																</label>
+																<!--end::Option-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+														<!--begin::Hint-->
+														<div class="form-text">استفاده از این نسخه کوتاه شده از توصیف
+															گزاره شما را مشاهده می کند
+														</div>
+														<!--end::Hint-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="mb-10 fv-row">
+														<!--begin::Tags-->
+														<label class="form-label mb-3">تیم اکانت نام</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<input type="text"
+														       class="form-control form-control-lg form-control-solid"
+														       name="account_name" placeholder="" value=""/>
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="mb-0 fv-row">
+														<!--begin::Tags-->
+														<label class="d-flex align-items-center form-label mb-5">انتخاب
+															پلن اکانت
+															<i class="fas fa-exclamation-circle ms-2 fs-7"
+															   data-bs-toggle="tooltip"
+															   title="ماهانه billing will be based on your account plan"></i></label>
+														<!--end::Tags-->
+														<!--begin::تنظیمات-->
+														<div class="mb-0">
+															<!--begin:Option-->
+															<label class="d-flex flex-stack mb-5 cursor-pointer">
+																<!--begin:برچسب-->
+																<span class="d-flex align-items-center me-2">
+																	<!--begin::Icon-->
+																	<span class="symbol symbol-50px me-6">
+																		<span class="symbol-label">
+																			<!--begin::Svg Icon | path: icons/duotune/finance/fin001.svg-->
+																			<span class="svg-icon svg-icon-1 svg-icon-gray-600">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																				     width="24" height="24"
+																				     viewBox="0 0 24 24" fill="none">
+																					<path d="M20 19.725V18.725C20 18.125 19.6 17.725 19 17.725H5C4.4 17.725 4 18.125 4 18.725V19.725H3C2.4 19.725 2 20.125 2 20.725V21.725H22V20.725C22 20.125 21.6 19.725 21 19.725H20Z"
+																					      fill="currentColor"/>
+																					<path opacity="0.3"
+																					      d="M22 6.725V7.725C22 8.325 21.6 8.725 21 8.725H18C18.6 8.725 19 9.125 19 9.725C19 10.325 18.6 10.725 18 10.725V15.725C18.6 15.725 19 16.125 19 16.725V17.725H15V16.725C15 16.125 15.4 15.725 16 15.725V10.725C15.4 10.725 15 10.325 15 9.725C15 9.125 15.4 8.725 16 8.725H13C13.6 8.725 14 9.125 14 9.725C14 10.325 13.6 10.725 13 10.725V15.725C13.6 15.725 14 16.125 14 16.725V17.725H10V16.725C10 16.125 10.4 15.725 11 15.725V10.725C10.4 10.725 10 10.325 10 9.725C10 9.125 10.4 8.725 11 8.725H8C8.6 8.725 9 9.125 9 9.725C9 10.325 8.6 10.725 8 10.725V15.725C8.6 15.725 9 16.125 9 16.725V17.725H5V16.725C5 16.125 5.4 15.725 6 15.725V10.725C5.4 10.725 5 10.325 5 9.725C5 9.125 5.4 8.725 6 8.725H3C2.4 8.725 2 8.325 2 7.725V6.725L11 2.225C11.6 1.925 12.4 1.925 13.1 2.225L22 6.725ZM12 3.725C11.2 3.725 10.5 4.425 10.5 5.225C10.5 6.025 11.2 6.725 12 6.725C12.8 6.725 13.5 6.025 13.5 5.225C13.5 4.425 12.8 3.725 12 3.725Z"
+																					      fill="currentColor"/>
+																				</svg>
+																			</span>
+																			<!--end::Svg Icon-->
+																		</span>
+																	</span>
+																	<!--end::Icon-->
+																	<!--begin::توضیحات-->
+																	<span class="d-flex flex-column">
+																		<span class="fw-bolder text-gray-800 text-hover-primary fs-5">کمپانی اکانت</span>
+																		<span class="fs-6 fw-bold text-muted">از تصاویر برای افزایش جریان ارسال خود استفاده کنید</span>
+																	</span>
+																	<!--end:توضیحات-->
+																</span>
+																<!--end:برچسب-->
+																<!--begin:Input-->
+																<span class="form-check form-check-custom form-check-solid">
+																	<input class="form-check-input" type="radio"
+																	       name="account_plan" value="1"/>
+																</span>
+																<!--end:Input-->
+															</label>
+															<!--end::Option-->
+															<!--begin:Option-->
+															<label class="d-flex flex-stack mb-5 cursor-pointer">
+																<!--begin:برچسب-->
+																<span class="d-flex align-items-center me-2">
+																	<!--begin::Icon-->
+																	<span class="symbol symbol-50px me-6">
+																		<span class="symbol-label">
+																			<!--begin::Svg Icon | path: icons/duotune/graphs/gra006.svg-->
+																			<span class="svg-icon svg-icon-1 svg-icon-gray-600">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																				     width="24" height="24"
+																				     viewBox="0 0 24 24" fill="none">
+																					<path d="M13 5.91517C15.8 6.41517 18 8.81519 18 11.8152C18 12.5152 17.9 13.2152 17.6 13.9152L20.1 15.3152C20.6 15.6152 21.4 15.4152 21.6 14.8152C21.9 13.9152 22.1 12.9152 22.1 11.8152C22.1 7.01519 18.8 3.11521 14.3 2.01521C13.7 1.91521 13.1 2.31521 13.1 3.01521V5.91517H13Z"
+																					      fill="currentColor"/>
+																					<path opacity="0.3"
+																					      d="M19.1 17.0152C19.7 17.3152 19.8 18.1152 19.3 18.5152C17.5 20.5152 14.9 21.7152 12 21.7152C9.1 21.7152 6.50001 20.5152 4.70001 18.5152C4.30001 18.0152 4.39999 17.3152 4.89999 17.0152L7.39999 15.6152C8.49999 16.9152 10.2 17.8152 12 17.8152C13.8 17.8152 15.5 17.0152 16.6 15.6152L19.1 17.0152ZM6.39999 13.9151C6.19999 13.2151 6 12.5152 6 11.8152C6 8.81517 8.2 6.41515 11 5.91515V3.01519C11 2.41519 10.4 1.91519 9.79999 2.01519C5.29999 3.01519 2 7.01517 2 11.8152C2 12.8152 2.2 13.8152 2.5 14.8152C2.7 15.4152 3.4 15.7152 4 15.3152L6.39999 13.9151Z"
+																					      fill="currentColor"/>
+																				</svg>
+																			</span>
+																			<!--end::Svg Icon-->
+																		</span>
+																	</span>
+																	<!--end::Icon-->
+																	<!--begin::توضیحات-->
+																	<span class="d-flex flex-column">
+																		<span class="fw-bolder text-gray-800 text-hover-primary fs-5">توسعه دهنده اکانت</span>
+																		<span class="fs-6 fw-bold text-muted">از تصاویر برای زمان ارسال خود استفاده کنید</span>
+																	</span>
+																	<!--end:توضیحات-->
+																</span>
+																<!--end:برچسب-->
+																<!--begin:Input-->
+																<span class="form-check form-check-custom form-check-solid">
+																	<input class="form-check-input" type="radio"
+																	       checked="checked" name="account_plan"
+																	       value="2"/>
+																</span>
+																<!--end:Input-->
+															</label>
+															<!--end::Option-->
+															<!--begin:Option-->
+															<label class="d-flex flex-stack mb-0 cursor-pointer">
+																<!--begin:برچسب-->
+																<span class="d-flex align-items-center me-2">
+																	<!--begin::Icon-->
+																	<span class="symbol symbol-50px me-6">
+																		<span class="symbol-label">
+																			<!--begin::Svg Icon | path: icons/duotune/graphs/gra008.svg-->
+																			<span class="svg-icon svg-icon-1 svg-icon-gray-600">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																				     width="24" height="24"
+																				     viewBox="0 0 24 24" fill="none">
+																					<path d="M13 10.9128V3.01281C13 2.41281 13.5 1.91281 14.1 2.01281C16.1 2.21281 17.9 3.11284 19.3 4.61284C20.7 6.01284 21.6 7.91285 21.9 9.81285C22 10.4129 21.5 10.9128 20.9 10.9128H13Z"
+																					      fill="currentColor"/>
+																					<path opacity="0.3"
+																					      d="M13 12.9128V20.8129C13 21.4129 13.5 21.9129 14.1 21.8129C16.1 21.6129 17.9 20.7128 19.3 19.2128C20.7 17.8128 21.6 15.9128 21.9 14.0128C22 13.4128 21.5 12.9128 20.9 12.9128H13Z"
+																					      fill="currentColor"/>
+																					<path opacity="0.3"
+																					      d="M11 19.8129C11 20.4129 10.5 20.9129 9.89999 20.8129C5.49999 20.2129 2 16.5128 2 11.9128C2 7.31283 5.39999 3.51281 9.89999 3.01281C10.5 2.91281 11 3.41281 11 4.01281V19.8129Z"
+																					      fill="currentColor"/>
+																				</svg>
+																			</span>
+																			<!--end::Svg Icon-->
+																		</span>
+																	</span>
+																	<!--end::Icon-->
+																	<!--begin::توضیحات-->
+																	<span class="d-flex flex-column">
+																		<span class="fw-bolder text-gray-800 text-hover-primary fs-5">تست اکانت</span>
+																		<span class="fs-6 fw-bold text-muted">از تصاویر برای تقویت رودخانه های سفر در زمان استفاده کنید</span>
+																	</span>
+																	<!--end:توضیحات-->
+																</span>
+																<!--end:برچسب-->
+																<!--begin:Input-->
+																<span class="form-check form-check-custom form-check-solid">
+																	<input class="form-check-input" type="radio"
+																	       name="account_plan" value="3"/>
+																</span>
+																<!--end:Input-->
+															</label>
+															<!--end::Option-->
+														</div>
+														<!--end::تنظیمات-->
+													</div>
+													<!--end::Input group-->
+												</div>
+												<!--end::Wrapper-->
+											</div>
+											<!--end::Step 2-->
+											<!--begin::Actions-->
+											<div class="d-flex flex-stack pt-15">
+												<!--begin::Wrapper-->
+												<div class="mr-2">
+													<button type="button" class="btn btn-lg btn-light-primary me-3"
+													        data-kt-stepper-action="previous">
+														<!--begin::Svg Icon | path: icons/duotune/arrows/arr063.svg-->
+														<span class="svg-icon svg-icon-4 me-1">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														     viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="6" y="11" width="13" height="2"
+															      rx="1" fill="currentColor"/>
+															<path d="M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z"
+															      fill="currentColor"/>
+														</svg>
+													</span>
+														<!--end::Svg Icon-->برگشت
+													</button>
+												</div>
+												<!--end::Wrapper-->
+												<!--begin::Wrapper-->
+												<div>
+													<button type="button" class="btn btn-lg btn-primary me-3"
+													        data-kt-stepper-action="submit">
+														<span class="indicator-label">ثبت
+															<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+														<span class="svg-icon svg-icon-3 ms-2 me-0">
+															<svg xmlns="http://www.w3.org/2000/svg" width="24"
+															     height="24" viewBox="0 0 24 24" fill="none">
+																<rect opacity="0.5" x="18" y="13" width="13" height="2"
+																      rx="1" transform="rotate(-180 18 13)"
+																      fill="currentColor"/>
+																<path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+																      fill="currentColor"/>
+															</svg>
+														</span>
+															<!--end::Svg Icon--></span>
+														<span class="indicator-progress">لطفا صبر کنید...
+														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+													</button>
+													<button type="button" class="btn btn-lg btn-primary"
+													        data-kt-stepper-action="next">ادامه
+														<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+														<span class="svg-icon svg-icon-4 ms-1 me-0">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														     viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2"
+															      rx="1" transform="rotate(-180 18 13)"
+															      fill="currentColor"/>
+															<path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+															      fill="currentColor"/>
+														</svg>
+													</span>
+														<!--end::Svg Icon--></button>
+												</div>
+												<!--end::Wrapper-->
+											</div>
+											<!--end::Actions-->
+										</form>
+										<!--end::Form-->
+									</div>
+									<!--end::Stepper-->
+
 
 								</div>
 								<!--end::Header-->
-								<!--begin::Body-->
-								<div class="card-body pt-2">
-									<!--begin::آیتم-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-success"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<label>
-												<input class="form-check-input" type="checkbox" value=""/>
-											</label>
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::توضیحات-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">ساختن
-												لوگو فروشگاه</a>
-											<span class="text-muted fw-bold d-block">سررسید در 2 روز</span>
-										</div>
-										<!--end::توضیحات-->
-										<span class="badge badge-light-success fs-8 fw-bolder">جدید</span>
-									</div>
-									<!--end:آیتم-->
-									<!--begin::آیتم-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-primary"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<label>
-												<input class="form-check-input" type="checkbox" value=""/>
-											</label>
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::توضیحات-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">جلسه
-												ذینفعان</a>
-											<span class="text-muted fw-bold d-block">سررسید سه روز</span>
-										</div>
-										<!--end::توضیحات-->
-										<span class="badge badge-light-primary fs-8 fw-bolder">جدید</span>
-									</div>
-									<!--end:آیتم-->
-									<!--begin::آیتم-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-warning"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<label>
-												<input class="form-check-input" type="checkbox" value=""/>
-											</label>
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::توضیحات-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">تخمین
-												زدن</a>
-											<span class="text-muted fw-bold d-block">سررسید در 5 روز</span>
-										</div>
-										<!--end::توضیحات-->
-										<span class="badge badge-light-warning fs-8 fw-bolder">جدید</span>
-									</div>
-									<!--end:آیتم-->
-									<!--begin::آیتم-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-primary"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<label>
-												<input class="form-check-input" type="checkbox" value=""/>
-											</label>
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::توضیحات-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">ویترین
-												برنامه</a>
-											<span class="text-muted fw-bold d-block">سررسید در 2 روز</span>
-										</div>
-										<!--end::توضیحات-->
-										<span class="badge badge-light-primary fs-8 fw-bolder">جدید</span>
-									</div>
-									<!--end:آیتم-->
-									<!--begin::آیتم-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-danger"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<label>
-												<input class="form-check-input" type="checkbox" value=""/>
-											</label>
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::توضیحات-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">ملاقات
-												پروژه ها</a>
-											<span class="text-muted fw-bold d-block">سررسید در دوازده روز</span>
-										</div>
-										<!--end::توضیحات-->
-										<span class="badge badge-light-danger fs-8 fw-bolder">جدید</span>
-									</div>
-									<!--end:آیتم-->
-									<!--begin::آیتم-->
-									<div class="d-flex align-items-center">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-success"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<label>
-												<input class="form-check-input" type="checkbox" value=""/>
-											</label>
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::توضیحات-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">مشتریان
-												بروزرسانی</a>
-											<span class="text-muted fw-bold d-block">سررسید در یک هفته</span>
-										</div>
-										<!--end::توضیحات-->
-										<span class="badge badge-light-success fs-8 fw-bolder">جدید</span>
-									</div>
-									<!--end:آیتم-->
-								</div>
-								<!--end::Body-->
 							</div>
 							<!--end:لیست Widget 3-->
 						</div>
@@ -513,7 +719,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -608,7 +815,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -703,7 +911,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -798,7 +1007,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -893,7 +1103,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -1046,7 +1257,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -1141,7 +1353,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -1236,7 +1449,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -1331,7 +1545,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -1426,7 +1641,8 @@
 												<td>
 													<div class="form-check form-check-sm form-check-custom form-check-solid">
 														<label>
-															<input class="form-check-input widget-9-check" type="checkbox"
+															<input class="form-check-input widget-9-check"
+															       type="checkbox"
 															       value="1"/>
 														</label>
 													</div>
@@ -1434,7 +1650,7 @@
 												<td>
 													<div class="d-flex align-items-center">
 														<div class="symbol symbol-45px me-5">
-<!--															<img src="/media/avatars/300-23.jpg" alt=""/>-->
+															<!--															<img src="/media/avatars/300-23.jpg" alt=""/>-->
 														</div>
 														<div class="d-flex justify-content-start flex-column">
 															<a href="#"
@@ -2790,6 +3006,7 @@
 	</div>
 </div>
 <!--end::Modal - بارگزاری فایل-->
+
 
 <!--end::Global Javascript Bundle-->
 <script src="/plugins/global/plugins.bundle.js"></script>

@@ -39210,12 +39210,12 @@ code:not([class*=language-]) {
   border-color: #B5B5C3;
 }
 .form-control[readonly] {
-  background-color: #ffffff;
+  background-color: #e9eaea;
 }
 .form-control.form-control-solid {
-  background-color: #F5F8FA;
+  background-color: #e9eaea;
   border-color: #F5F8FA;
-  color: #5E6278;
+  color: #515469;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .form-control.form-control-solid::placeholder {
@@ -39226,7 +39226,7 @@ code:not([class*=language-]) {
   opacity: 1;
 }
 .dropdown.show > .form-control.form-control-solid, .form-control.form-control-solid:active, .form-control.form-control-solid.active, .form-control.form-control-solid:focus, .form-control.form-control-solid.focus {
-  background-color: #eef3f7;
+  background-color: #e9eaea;
   border-color: #eef3f7;
   color: #5E6278;
   transition: color 0.2s ease, background-color 0.2s ease;

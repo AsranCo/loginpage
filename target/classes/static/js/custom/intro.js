@@ -12,7 +12,7 @@ var KTIntro = function () {
         var time7days = 1000 * 60 * 60 * 24 * 7; // 7 days
         var time15days = 1000 * 60 * 60 * 24 * 15; // 15 days
         var time21days = 1000 * 60 * 60 * 24 * 21; // 21 days
-        var time30days = 1000 * 60 * 60 * 24 * 30; // 30 days        
+        var time30days = 1000 * 60 * 60 * 24 * 30; // 30 days
 
         if (!KTCookie.get(id + '_counter') || parseInt(KTCookie.get(id + '_counter')) < 3) {
             // Initial display
