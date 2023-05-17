@@ -1,0 +1,163 @@
+<mxfile host="app.diagrams.net" modified="2023-04-08T09:48:30.310Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:101.0) Gecko/20100101 Firefox/101.0" etag="RYZzbDWmFVAV6RoKSlN_" version="21.1.5" type="device">
+  <diagram id="07fea595-8f29-1299-0266-81d95cde20df" name="Page-1">
+    <mxGraphModel dx="1362" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="170" value="فهم مساله و نیازمندی" style="swimlane;whiteSpace=wrap;fillColor=none;swimlaneFillColor=#BAC8D3;fontColor=#2F5B7C;fontFamily=Tahoma;html=1;strokeColor=none;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="24.5" y="88.5" width="160" height="650" as="geometry">
+            <mxRectangle x="20" y="20" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="171" value="RFP دریافت" style="whiteSpace=wrap;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=1;html=1;fontSize=12;plain-purple;strokeColor=none;fillColor=#2f5b7c;gradientColor=none;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="170" vertex="1">
+          <mxGeometry x="20" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="172" value="&lt;font data-font-src=&quot;https://fonts.cdnfonts.com/css/iranian-sans&quot; face=&quot;sans&quot;&gt;برگزاری جلسه با کارفرما&lt;/font&gt;" style="whiteSpace=wrap;strokeColor=none;fillColor=#2f5b7c;shadow=0;fontColor=#FFFFFF;fontFamily=Helvetica;fontStyle=1;html=1;fontSize=12;spacing=6;verticalAlign=middle;" parent="170" vertex="1">
+          <mxGeometry x="20" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="175" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="170" source="171" target="172" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="110" as="sourcePoint" />
+            <mxPoint x="260" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="176" value="آماده سازی گانت چارت" style="swimlane;whiteSpace=wrap;fillColor=none;swimlaneFillColor=#BAC8D3;fontColor=#2F5B7C;fontFamily=Tahoma;html=1;strokeColor=none;opacity=25;" parent="1" vertex="1">
+          <mxGeometry x="824.5" y="88.5" width="160" height="650" as="geometry">
+            <mxRectangle x="20" y="20" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="177" value="آماده سازی گانت چارت پروژه برای گرارش های پیشرفت داخلی&lt;br&gt;موازی سازی حداکثری کارها" style="shape=document;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=#12aab5;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;spacingBottom=22;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="176" vertex="1">
+          <mxGeometry x="20" y="50" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="179" value="اجرا پروژه" style="whiteSpace=wrap;strokeColor=none;fillColor=#2f5b7c;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="176" vertex="1">
+          <mxGeometry x="20" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="180" value="ارسال پروپوزال نهایی " style="swimlane;whiteSpace=wrap;fillColor=none;swimlaneFillColor=#BAC8D3;fontColor=#2F5B7C;fontFamily=Tahoma;html=1;strokeColor=none;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="664.5" y="88.5" width="160" height="650" as="geometry">
+            <mxRectangle x="20" y="20" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="181" value="تعیین محصول یا زیرمحصول های تحویلی" style="whiteSpace=wrap;fillColor=#2f5b7c;strokeColor=none;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="180" vertex="1">
+          <mxGeometry x="20" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="182" value="برگزاری جلسه نهایی با کارفرما&lt;br&gt;رفع ابهامات احتمالی" style="whiteSpace=wrap;strokeColor=none;fillColor=#2f5b7c;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="180" vertex="1">
+          <mxGeometry x="10" y="420" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="215" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="180" source="182" target="181" edge="1">
+          <mxGeometry x="140" y="450" width="100" height="100" as="geometry">
+            <mxPoint x="220" y="490" as="sourcePoint" />
+            <mxPoint x="240" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="183" value="شکست مساله" style="swimlane;whiteSpace=wrap;fillColor=none;swimlaneFillColor=#BAC8D3;fontColor=#2F5B7C;fontFamily=Tahoma;html=1;strokeColor=none;opacity=25;" parent="1" vertex="1">
+          <mxGeometry x="184.5" y="88.5" width="160" height="650" as="geometry">
+            <mxRectangle x="20" y="20" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="184" value="بررسی سند نیازمندی و برگزاری جلسه در تیم مجری" style="whiteSpace=wrap;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;plain-purple;strokeColor=none;fillColor=#2f5b7c;gradientColor=none;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="183" vertex="1">
+          <mxGeometry x="20" y="165" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="185" value="در صورت نیاز جلسه با سایر منتور های گروه" style="shape=document;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=#12aab5;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;spacingBottom=22;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="183" vertex="1">
+          <mxGeometry x="20" y="265" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="186" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="183" source="184" target="185" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-10" y="100" as="sourcePoint" />
+            <mxPoint x="90" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="187" value="نعیین راه حل" style="swimlane;whiteSpace=wrap;fillColor=none;swimlaneFillColor=#BAC8D3;fontColor=#2F5B7C;fontFamily=Tahoma;html=1;strokeColor=none;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="344.5" y="88.5" width="160" height="650" as="geometry">
+            <mxRectangle x="20" y="20" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="188" value="پیشنهاد راه حل برای هر بخش مساله" style="shape=document;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=#12aab5;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;spacingBottom=22;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="187" vertex="1">
+          <mxGeometry x="20" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="189" value="&lt;div&gt;بررسی کلی ابزارهای مورد نیاز&lt;/div&gt;" style="shape=document;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=#12aab5;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;spacingBottom=22;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="187" vertex="1">
+          <mxGeometry x="20" y="225" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="H1kqQAtTtSO3O4LjnAY1-219" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#12AAB5;strokeWidth=3;html=1;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="187" target="189">
+          <mxGeometry x="55" y="121" width="100" height="100" as="geometry">
+            <mxPoint x="55.5" y="121.5" as="sourcePoint" />
+            <mxPoint x="155.5" y="191.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="193" value="نگارش پروپوزال" style="swimlane;whiteSpace=wrap;fillColor=none;swimlaneFillColor=#BAC8D3;fontColor=#2F5B7C;fontFamily=Tahoma;html=1;strokeColor=none;opacity=25;startSize=23;" parent="1" vertex="1">
+          <mxGeometry x="505" y="89" width="160" height="650" as="geometry">
+            <mxRectangle x="20" y="20" width="80" height="23" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="194" value="نگارش نسخه اولیه با قالب استاندارد" style="whiteSpace=wrap;strokeColor=none;fillColor=#2f5b7c;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="193" vertex="1">
+          <mxGeometry x="20" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="195" value="&lt;div&gt;بازنگری اولیه توسط مدیر فنی&amp;nbsp; و نهایی کردن پروپوزال&lt;/div&gt;" style="whiteSpace=wrap;strokeColor=none;fillColor=#2f5b7c;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" parent="193" vertex="1">
+          <mxGeometry x="20.5" y="271.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H1kqQAtTtSO3O4LjnAY1-221" value="" style="edgeStyle=none;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="193" source="194" target="195">
+          <mxGeometry x="150" y="200" width="100" height="100" as="geometry">
+            <mxPoint x="150.5" y="200.5" as="sourcePoint" />
+            <mxPoint x="190.5" y="200.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H1kqQAtTtSO3O4LjnAY1-222" value="&lt;div&gt;تخمین موارد قابل تحویل &lt;br&gt;بازنگری نهایی توسط مدیر پژوهشکده&lt;br&gt;تعیین جلسه دفاع&lt;br&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=#12aab5;shadow=0;fontColor=#FFFFFF;fontFamily=sans;fontStyle=0;html=1;fontSize=12;spacing=6;spacingBottom=22;fontSource=http%3A%2F%2Fmincdn.ir%2Ffont%2FIranSans%2FIRANSansWeb.woff;" vertex="1" parent="193">
+          <mxGeometry x="10" y="420" width="130.5" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="H1kqQAtTtSO3O4LjnAY1-223" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#12AAB5;strokeWidth=3;html=1;endArrow=block;endFill=1;" edge="1" parent="193">
+          <mxGeometry x="-276.78" y="252" width="100" height="100" as="geometry">
+            <mxPoint x="65.5" y="331" as="sourcePoint" />
+            <mxPoint x="95.5" y="421" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="66" y="371" />
+              <mxPoint x="93" y="371" />
+              <mxPoint x="93" y="391" />
+              <mxPoint x="96" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="202" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="1" source="171" target="184" edge="1">
+          <mxGeometry x="164.5" y="178.5" width="100" height="100" as="geometry">
+            <mxPoint x="224.5" y="248.5" as="sourcePoint" />
+            <mxPoint x="324.5" y="148.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="204" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="1" source="171" target="188" edge="1">
+          <mxGeometry x="164.5" y="178.5" width="100" height="100" as="geometry">
+            <mxPoint x="174.5" y="188.5" as="sourcePoint" />
+            <mxPoint x="274.5" y="263.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="208" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#12AAB5;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="1" source="188" target="194" edge="1">
+          <mxGeometry x="484.5" y="178.5" width="100" height="100" as="geometry">
+            <mxPoint x="444.5" y="248.5" as="sourcePoint" />
+            <mxPoint x="544.5" y="148.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="213" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="1" source="181" target="177" edge="1">
+          <mxGeometry x="744.5" y="178.5" width="100" height="100" as="geometry">
+            <mxPoint x="864.5" y="378.5" as="sourcePoint" />
+            <mxPoint x="964.5" y="278.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="744.5" y="178.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="214" value="" style="edgeStyle=segmentEdgeStyle;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;" parent="1" source="181" target="179" edge="1">
+          <mxGeometry x="804.5" y="278.5" width="100" height="100" as="geometry">
+            <mxPoint x="854.5" y="388.5" as="sourcePoint" />
+            <mxPoint x="954.5" y="288.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H1kqQAtTtSO3O4LjnAY1-224" value="" style="edgeStyle=none;strokeColor=#2F5B7C;strokeWidth=3;html=1;endArrow=block;endFill=1;exitX=0.996;exitY=0.372;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="H1kqQAtTtSO3O4LjnAY1-222" target="182">
+          <mxGeometry x="265" y="481" width="100" height="100" as="geometry">
+            <mxPoint x="700" y="590" as="sourcePoint" />
+            <mxPoint x="740" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
